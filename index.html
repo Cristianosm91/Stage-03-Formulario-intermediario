@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+        <div class="wrapper">
+            <form>
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <div class="info">
+                            <div class="input-wrapper">
+                                <legend>INFORMAÇÕES PESSOAIS</legend>
+                                <hr>
+                                <div class="nome">
+                                    <div class="inputName">
+                                        <label for="inputName">Nome</label>
+                                        <input type="text" id="inputName">
+                                    </div>
+                                    <div class="inputName">
+                                        <label for="inputSobrenome">Sobrenome</label>
+                                        <input type="text" id="inputSobrenome">
+                                    </div>
+                                </div>
+                                <label for="inputEmail">E-mail <span>(digite um email válido)</span></label>
+                                <input type="email" id="inputEmail">
+                                <label for="inputPassword">Senha <span>(mínimo de 6 caracteres)</span></label>
+                                <input type="password" id="inputPassword">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <legend>INFORMAÇÕES DO MENTOR</legend>
+                                <hr>
+                                <label for="inputMentor">Nome do seu mentor <span>(só o primeiro nome) </span></label>
+                                <input type="text" id="inputMentor">
+                            </div>
+                            <div class="input-wrapper">
+                                <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+                                <hr>
+                                <legend class="legendMentoria">PRIMEIRA MENTORIA</legend>
+                               
+                                <div class="agenda">
+                                    <div class="inputAgenda">
+                                        <label for="dateBegin1">Data <span>(DD/MM/AAAA)</span></label>
+                                        <input type="datetime" id="dateBegin1">
+                                    </div>
+                                    <div class="inputTime">
+                                        <label for="timeBegin1">Das </label>
+                                        <input type="datetime" id="timeBegin1">
+                                    </div>
+                                    <div class="inputTime">
+                                        <label for="timeEnd1">Até </label>
+                                        <input type="datetime" id="timeEnd1">
+                                    </div>
+                                </div>
+                               
+                                <legend class="legendMentoria">SEGUNDA MENTORIA</legend>
+                               
+                                <div class="agenda">
+                                    <div class="inputAgenda">
+                                        <label for="dateBegin2">Data <span>(DD/MM/AAAA)</span></label>
+                                        <input type="datetime" id="dateBegin2">
+                                    </div>
+                                    <div class="inputTime">
+                                        <label for="timeBegin2">Das </label>
+                                        <input type="datetime" id="timeBegin2">
+                                    </div>
+                                    <div class="inputTime">
+                                        <label for="timeEnd2">Até </label>
+                                        <input type="datetime" id="timeEnd2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="down">
+            <input type="button" class="saveButton" value="Save">
+           
+        </div>
+    </div>
+</body>
+
+</html>
